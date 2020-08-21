@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: 'Exo 2.0';
+  src: url("../fonts/Exo 2.0/Exo20-Thin.eot");
+  src: local("../fonts/Exo 2.0/Exo 2.0 Thin"), local("Exo2.0-Thin"), url("../fonts/Exo 2.0/Exo20-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo 2.0/Exo20-Thin.woff") format("woff"), url("../fonts/Exo 2.0/Exo20-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS Regular';
+  src: url("../fonts/Trebuchet MS/TrebuchetMS.eot");
+  src: url("../fonts/Trebuchet MS/TrebuchetMS.eot?#iefix") format("embedded-opentype"), url("../fonts/Trebuchet MS/TrebuchetMS.woff") format("woff"), url("../fonts/Trebuchet MS/TrebuchetMS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS Bold';
+  src: url("../fonts/Trebuchet MS/TrebuchetMS-Bold.eot");
+  src: url("../fonts/Trebuchet MS/TrebuchetMS-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Trebuchet MS/TrebuchetMS-Bold.woff") format("woff"), url("../fonts/Trebuchet MS/TrebuchetMS-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+  background-image: url("../img/Pattern.jpg");
+  max-width: 1280px;
+  max-height: 680px;
+}
+
+.wrap {
+  background-image: url("../img/Shadow.jpg");
+  width: 1280px;
+  height: 680px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.title {
+  text-shadow: 0 1px 0 #000000;
+  color: #ffffff;
+  font-family: "Exo 2.0";
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  padding: 47px 0 23px;
+}
+
+.cat-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cat-item__left {
+  margin-left: 80px;
+  width: 320px;
+  height: 480px;
+  border: 4px solid #1698d9;
+  background-color: #f2f2f2;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.cat-item__center {
+  margin-left: 80px;
+  width: 320px;
+  height: 480px;
+  border: 4px solid #d91667;
+  background-color: #f2f2f2;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.cat-item__rigth {
+  margin-left: 80px;
+  width: 320px;
+  height: 480px;
+  border: 4px solid #b3b3b3;
+  background-color: #f2f2f2;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.cat-item__rigth:last-child .cat-item__overhead, .cat-item__rigth:last-child .cat-item__title, .cat-item__rigth:last-child .cat-item__subtitle, .cat-item__rigth:last-child .cat-item__text, .cat-item__rigth:last-child .cat-item__image {
+  opacity: 0.5;
+}
+
+.cat-item__overhead {
+  color: #666666;
+  font-family: "Trebuchet MS Regular";
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0 15px 45px;
+}
+
+.cat-item__title {
+  color: #000000;
+  font-family: "Trebuchet MS Regular";
+  font-size: 48px;
+  font-weight: 700;
+  padding: 0 0 4px 45px;
+}
+
+.cat-item__subtitle {
+  color: #000000;
+  font-family: "Trebuchet MS Regular";
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 0 15px 45px;
+}
+
+.cat-item__text {
+  color: #666666;
+  font-family: "Trebuchet MS Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 45px;
+}
+
+.cat-item__image {
+  padding-top: 25px;
+}
+
+.cat-item__rigth:last-child .cat-item__image {
+  padding-top: 10px;
+}
+
+.volume__left {
+  position: relative;
+  left: 220px;
+  bottom: 90px;
+  width: 81px;
+  height: 81px;
+  background-color: #1698d9;
+  border-radius: 200px;
+  text-align: center;
+}
+
+.volume__center {
+  position: relative;
+  left: 220px;
+  bottom: 90px;
+  width: 81px;
+  height: 81px;
+  background-color: #d91667;
+  border-radius: 200px;
+  text-align: center;
+}
+
+.volume__rigth {
+  position: relative;
+  left: 220px;
+  bottom: 90px;
+  width: 81px;
+  height: 81px;
+  background-color: #b3b3b3;
+  border-radius: 200px;
+  text-align: center;
+}
+
+.volume__text {
+  color: #ffffff;
+  font-family: "Trebuchet MS Regular";
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 22px;
+  padding-bottom: 7px;
+}
+
+.volume__text2 {
+  color: #ffffff;
+  font-family: "Trebuchet MS Regular";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.cat-footer__rigth {
+  text-shadow: 0 1px 0 #000000;
+  color: #ffff66;
+  font-family: "Trebuchet MS Regular";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  position: relative;
+  left: 65px;
+  bottom: 70px;
+}
+
+.cat-footer__center {
+  text-shadow: 0 1px 0 #000000;
+  color: #ffffff;
+  font-family: "Trebuchet MS Regular";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.002em;
+  position: relative;
+  left: 0px;
+  bottom: 70px;
+}
+
+.cat-footer__left {
+  text-shadow: 0 1px 0 #000000;
+  color: #ffffff;
+  font-family: "Trebuchet MS Regular";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  position: relative;
+  left: 50px;
+  bottom: 70px;
+}
+
+.cat-footer__left-money {
+  color: #1698d9;
+  font-family: "Trebuchet MS Bold";
+  font-weight: 700;
+  -webkit-text-decoration: underline dashed #1698d9;
+          text-decoration: underline dashed #1698d9;
+}
+
+.cat-footer__left-dot {
+  font-family: "Trebuchet MS Regular";
+  color: #1698d9;
+}

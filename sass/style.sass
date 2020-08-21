@@ -1,0 +1,164 @@
+@import "nullstyle.scss";
+@import "fonts.scss";
+
+.container
+	margin: 0 auto
+	background-image: url("../img/Pattern.jpg")
+	max-width: 1280px
+	max-height: 680px
+.wrap
+	background-image: url("../img/Shadow.jpg")
+	width: 1280px
+	height: 680px
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%)
+.title
+	text-shadow: 0 1px 0 #000000
+	color: #ffffff
+	font-family: "Exo 2.0"
+	font-size: 36px
+	font-weight: 400
+	text-align: center
+	padding: 47px 0 23px
+.cat-table
+	display: flex
+.cat-item
+	&__left
+		margin-left: 80px
+		width: 320px
+		height: 480px
+		border: 4px solid #1698d9
+		background-color: #f2f2f2
+		border-radius: 15px 15px 15px 15px
+	&__center
+		margin-left: 80px
+		width: 320px
+		height: 480px
+		border: 4px solid #d91667
+		background-color: #f2f2f2
+		border-radius: 15px 15px 15px 15px
+	&__rigth
+		margin-left: 80px
+		width: 320px
+		height: 480px
+		border: 4px solid #b3b3b3
+		background-color: #f2f2f2
+		border-radius: 15px 15px 15px 15px
+		&:last-child
+			.cat-item
+				&__overhead, &__title, &__subtitle, &__text, &__image
+					opacity: 0.5
+	&__overhead
+		color: #666666
+		font-family: "Trebuchet MS Regular"
+		font-size: 16px
+		font-weight: 400
+		padding: 20px 0 15px 45px
+	&__title
+		color: #000000
+		font-family: "Trebuchet MS Regular"
+		font-size: 48px
+		font-weight: 700
+		padding: 0 0 4px 45px
+	&__subtitle
+		color: #000000
+		font-family: "Trebuchet MS Regular"
+		font-size: 24px
+		font-weight: 700
+		padding: 0 0 15px 45px
+	&__text
+		color: #666666
+		font-family: "Trebuchet MS Regular"
+		font-size: 14px
+		font-weight: 400
+		line-height: 16px
+		padding-left: 45px
+	&__image
+		padding-top: 25px
+.cat-item__rigth:last-child .cat-item__image
+	padding-top: 10px
+.volume
+	&__left
+		position: relative
+		left: 220px
+		bottom: 90px
+		width: 81px
+		height: 81px
+		background-color: #1698d9
+		border-radius: 200px
+		text-align: center
+	&__center
+		position: relative
+		left: 220px
+		bottom: 90px
+		width: 81px
+		height: 81px
+		background-color: #d91667
+		border-radius: 200px
+		text-align: center
+	&__rigth
+		position: relative
+		left: 220px
+		bottom: 90px
+		width: 81px
+		height: 81px
+		background-color: #b3b3b3
+		border-radius: 200px
+		text-align: center
+	&__text
+		color: #ffffff
+		font-family: "Trebuchet MS Regular"
+		font-size: 42px
+		font-weight: 400
+		line-height: 22px
+		padding-top: 22px
+		padding-bottom: 7px
+	&__text2
+		color: #ffffff
+		font-family: "Trebuchet MS Regular"
+		font-size: 21px
+		font-weight: 400
+		line-height: 22px
+.cat-footer
+	&__rigth
+		text-shadow: 0 1px 0 #000000
+		color: #ffff66
+		font-family: "Trebuchet MS Regular"
+		font-size: 13px
+		font-weight: 400
+		line-height: 16px
+		position: relative
+		left: 65px
+		bottom: 70px
+	&__center
+		text-shadow: 0 1px 0 #000000
+		color: #ffffff
+		font-family: "Trebuchet MS Regular"
+		font-size: 13px
+		font-weight: 400
+		line-height: 16px
+		letter-spacing: -0.002em
+		position: relative
+		left: 0px
+		bottom: 70px
+	&__left
+		text-shadow: 0 1px 0 #000000
+		color: #ffffff
+		font-family: "Trebuchet MS Regular"
+		font-size: 13px
+		font-weight: 400
+		line-height: 16px
+		position: relative
+		left: 50px
+		bottom: 70px
+		&-money
+			color: #1698d9
+			font-family: "Trebuchet MS Bold"
+			font-weight: 700
+			text-decoration: underline dashed #1698d9
+		&-dot
+			font-family: "Trebuchet MS Regular"
+			color: #1698d9
+
+
+
+
